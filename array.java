@@ -5,19 +5,15 @@ class array {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
 
-        // it will create an array of size 10 and value 0
-        int[] arr1 = new int[10];
+        int[] array1 = { 1, 2, 3 };
+        int[] array2 = { 1, 2, 3 };
+        int[] array3 = { 1, 2, 4 };
 
-        // it will create an array and assign value to it
-        int[] arr2 = { 1, 3, 4, 5, 1, 2, 3, 4, 5, 6 };
+        boolean isEqual1And2 = Arrays.equals(array1, array2); // true
+        boolean isEqual1And3 = Arrays.equals(array1, array3); // false
 
-        // Create a new array that is a copy of the original array with length 20
-        int[] newArray = Arrays.copyOf(arr2, 20);
-
-        // access element from an array
-        for (int i = 0; i < newArray.length; i++) {
-            System.out.println("Index is " + i + ", element is " + newArray[i]);
-        }
+        System.out.println("Arrays array1 and array2 are equal: " + isEqual1And2);
+        System.out.println("Arrays array1 and array3 are equal: " + isEqual1And3);
 
     }
 }
