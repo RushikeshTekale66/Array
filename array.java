@@ -11,12 +11,14 @@ class array {
         //it will create an array and assign value to it
         int [] arr2 = {1,3,4,5,1,2,3,4,5,6};
 
-        //Sort Array
-        Arrays.sort(arr2);
+        int key = 5;
+        // searches the index of key in array
+        int index = Arrays.binarySearch(arr2, key);
+        System.out.println(index);
 
         //access element from an array
         for(int i=0; i<arr2.length; i++){
-            System.out.print(arr2[i]+" ");
+            System.out.println("Index is " +i+ ", element is "+arr2[i]);
         }
 
     }
