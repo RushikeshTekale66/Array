@@ -4,15 +4,8 @@ class array {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
 
-        // Declaring an array of integers
-        int[] numbers;
+            //Declaring two dimentional array
+        int[][] matrix = new int[3][3]; // 3x3 matrix
 
-        // Initializing the array with size 5
-        numbers = new int[5];
-
-        // Initializing the array with values
-        int[] number = { 1, 2, 3, 4, 5 };
-
-        System.out.println(numbers.length);
     }
 }
