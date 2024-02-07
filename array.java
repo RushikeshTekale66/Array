@@ -11,12 +11,12 @@ class array {
         // it will create an array and assign value to it
         int[] arr2 = { 1, 3, 4, 5, 1, 2, 3, 4, 5, 6 };
 
-        // Fill the array with value 10
-        Arrays.fill(arr2, 10);
+        // Create a new array that is a copy of the original array with length 20
+        int[] newArray = Arrays.copyOf(arr2, 20);
 
         // access element from an array
-        for (int i = 0; i < arr2.length; i++) {
-            System.out.println("Index is " + i + ", element is " + arr2[i]);
+        for (int i = 0; i < newArray.length; i++) {
+            System.out.println("Index is " + i + ", element is " + newArray[i]);
         }
 
     }
