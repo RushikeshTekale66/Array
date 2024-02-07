@@ -1,31 +1,18 @@
 import java.util.Scanner;
 
-class array{
+class array {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
-        System.out.println("Enter the size of an array");
-        int n = sc.nextInt();
-        int[] arr = new int[n];
 
-        for (int i = 0; i < n; i++) {
-            arr[i] = sc.nextInt();
-        }
+        // Declaring an array of integers
+        int[] numbers;
 
-        for (int i = 0; i < n; i++) {
-            System.out.print(arr[i]+" ");
-        }
-        
-        System.out.println();
+        // Initializing the array with size 5
+        numbers = new int[5];
 
-        System.out.println("Enter the number you want to check at which index it is present ");
-        int number = sc.nextInt();
+        // Initializing the array with values
+        int[] number = { 1, 2, 3, 4, 5 };
 
-        int index = 0;
-        for(int i=0; i<arr.length; i++){
-            if(arr[i]==number){
-                index = i;
-            }
-        }
-        System.out.println("The number" + number + " is present at index : "+ index);
+        System.out.println(numbers.length);
     }
 }
