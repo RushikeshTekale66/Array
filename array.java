@@ -9,10 +9,7 @@ class array {
 
         int number = 5;
         for(int i=0; i<numbers.length; i++){
-           if(number==numbers[i]){
-            System.out.println("Element is present at index : " + i);
-           }
-           else{System.out.println("Element is not present");}
+           System.out.print(numbers[i]);
         }
     }
 }
