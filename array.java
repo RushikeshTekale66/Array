@@ -8,8 +8,6 @@ class array {
         int[] numbers = { 1, 2, 3, 4, 5 };
 
         int number = 5;
-        for(int i=0; i<numbers.length; i++){
-           System.out.print(numbers[i]);
-        }
+        System.out.println(numbers[numbers.length-1]);
     }
 }
