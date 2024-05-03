@@ -23,6 +23,6 @@ class array {
                 count++;
             }
         }
-        System.out.println("The occurance of "+n+" is "+count);
+        System.out.println("The occurance of "+n+" is of "+count+" time");
     }
 }
