@@ -1,6 +1,8 @@
 import java.util.Scanner;
 import java.util.Arrays;
 
+// Occurance of the element
+
 class array {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
