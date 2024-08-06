@@ -8,7 +8,7 @@ class ArrayJava{
 					count++;
 				}
 			}
-			if(count==1){
+			if(count>1){
 				System.out.println(arr[i]);
 			}
 		}
