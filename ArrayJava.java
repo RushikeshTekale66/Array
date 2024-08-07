@@ -1,28 +1,24 @@
-import java.util.Scanner;
 class ArrayJava{
-	public static void main(String [] args){
-		Scanner sc = new Scanner(System.in);
-	
-		int [] arr = new int [5];
+	public void sort(int [] arr){
 		for(int i=0; i<arr.length; i++){
-			System.out.println("Enter Number for index " + i);
-			int num = sc.nextInt();
-			int count = 0;
-			for(int j=2; j<num; j++){
-				if(num%j==0){
-					count++;
+			for(int j=i+1; j<arr.length; j++){
+				if(arr[i]>arr[j]){
+					int temp = arr[i];
+					arr[i] = arr[j];
+					arr[j] = temp;
 				}
 			}
-			if(count == 0){
-				arr[i] = num;
-			}
-			else{
-				i--;
-				System.out.println(num + "number is not prime");
-			}
+			System.out.print(arr[i] + " ");
 		}
-		for(int i=0; i<arr.length; i++){
-			System.out.println(arr[i]);
-		}
+		
+	}
+	
+	public static void main(String [] args){
+		int [] arr = {10,30,50,40,60,70,90,80};
+		ArrayJava s = new ArrayJava ();
+		
+		System.out.println("Array in Ascending Order");
+		s.sort(arr);
+		
 	}
 }
