@@ -1,19 +1,23 @@
-/**
- * ArrayJava
- */
-public class ArrayJava {
-
-	 public static void main(String [] args){
-		int a = 10;
-		int b = 20;
-		System.out.println("Value of a beforeswaping : " + a);
-		System.out.println("Value of b beforeswaping : " + b);
-
-		a = a+b;
-		b = a-b;
-		a = a-b;
-
-		System.out.println("Value of a Afterswaping : " + a);
-		System.out.println("Value of b Afterswaping : " + b);
-	 }
+class ArrayJava{
+	public void common(int [] arr, int [] arr2){
+		System.out.println("Common element in array is " );
+		for(int i=0; i<arr.length; i++){
+			int count = 0;
+			for(int j=0; j<arr2.length; j++){
+				if(arr[i]==arr2[j]){
+					count ++;
+				}
+			}
+			if(count >= 1){
+				System.out.println(arr[i]);
+			}
+		}
+	}
+	
+	public static void main(String [] args){
+		int [] arr = {1,2,3};
+		int [] arr2 = {1,2, 1, 2,1};
+		ArrayJava m = new ArrayJava();
+		m.common(arr, arr2);
+	}
 }
