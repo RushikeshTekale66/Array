@@ -1,29 +1,9 @@
-import java.util.Scanner;
 class ArrayJava{
-
-	public void sum (int [] arr){
-		int sum = 0;
-		for(int i=0; i<arr.length; i++){
-			sum = sum+arr[i];
-		}
-		System.out.println("Sum of all array elements is : " + sum);
-	}
-	
 	public static void main(String [] args){
-		Scanner sc = new Scanner(System.in);
-		
-		System.out.println("Enter the lenght of the array");
-		int l = sc.nextInt();
-	
-		int [] arr = new int [l];
+		int [] arr = {1,2,3,4,5,6,7,8,9,0};
 
-		for(int i=0; i<l; i++){		
-			System.out.println("Enter the element for index : " + i);
-			arr[i] = sc.nextInt();
+		for(int e : arr){
+			System.out.println(e);
 		}
-		
-		//Object of the class
-		ArrayJava as = new ArrayJava();
-		as.sum(arr);
 	}
 }
