@@ -14,7 +14,7 @@ class ArrayEx{
 			arr[i] = sc.nextInt();
 		}
 		
-		for(int i=arr.length-1; i>=0; i--){
+		for(int i=0; i<arr.length; i++){
 			System.err.print(arr[i] + ", ");
 		}
 	}
