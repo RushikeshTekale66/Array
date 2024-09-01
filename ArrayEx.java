@@ -2,22 +2,20 @@ import java.util.Scanner;
 
 class ArrayEx{
 	public static void main(String [] args){
-		Scanner sc = new Scanner(System.in);
-		int [] arr = {1, 3, 5, 4, 2, 1};
+		Scanner sc = new Scanner (System.in);
 
-		System.out.println("Enter the index to find");
-		int index = sc.nextInt();
-		
-		for(int i=0; i<arr.length; i++){
-			for(int j=i+1; j<arr.length; j++){
-				if(arr[i]>arr[j]){
-					int temp = arr[i];
-					arr[i] = arr[j];
-					arr[j] = temp;
-				}
-			}
+		System.out.println("Enter the size of an array");
+		int size = sc.nextInt();
+
+		int [] arr = new int [size];
+
+		for(int i=0; i<size; i++){
+			System.out.println("Enter the element for index : " + (i+1));
+			arr[i] = sc.nextInt();
 		}
-
-		System.out.println("Element at inde : "+ index + " is " + arr[index-1]);
+		
+		for(int i=arr.length-1; i>=0; i--){
+			System.err.print(arr[i] + ", ");
+		}
 	}
 }
